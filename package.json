@@ -1,0 +1,69 @@
+{
+  "name": "newsapp",
+  "version": "1.0.0",
+  "description": "user friendly news app for customizing your feed for news",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app,app:* nodemon server.js",
+    "start-WIN": "set DEBUG=app & nodemon server.js",
+    "lint": "eslint server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ac08/NewsApp.git"
+  },
+  "keywords": [
+    "node.js",
+    "axios",
+    "mysql",
+    "sequelize",
+    "cli",
+    "heroku",
+    "newsapi",
+    "mvc",
+    "express",
+    "morgan",
+    "chalk",
+    "eslint"
+  ],
+  "author": "Group6",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ac08/NewsApp/issues"
+  },
+  "homepage": "https://github.com/ac08/NewsApp#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "chalk": "^4.1.0",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "jquery": "^3.5.1",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "newsapi": "^2.4.1",
+    "nodemon": "^2.0.6",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
