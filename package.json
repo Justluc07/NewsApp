@@ -1,5 +1,5 @@
 {
-  "name": "newsapp",
+  "name":"mysql-sequelized-heroku",
   "version": "1.0.0",
   "description": "user friendly news app for customizing your feed for news",
   "main": "server.js",
