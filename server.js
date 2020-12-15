@@ -82,19 +82,8 @@ db.sequelize
       { category: 'sports' },
       { category: 'technology' }
     ]);
-  })
-  // .then(() => {
-  //   db.User.create({
-  //     first_nm: 'Andrew',
-  //     last_nm: 'Circelli',
-  //     country_cd: 'us'
-  //   })
-  //     .then((user) => {
-  //       user.setSelected_Categories(['1', '2']);
-  //     });
-  // })
-  .then(() => {
     app.listen(PORT, () => {
-      debug(`listening on PORT ${chalk.green(PORT)}`);
+      debug(`listening on PORT ${PORT}`);
     });
-  });
+  })
+  
